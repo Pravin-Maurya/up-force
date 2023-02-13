@@ -242,9 +242,10 @@ const UserFormView = () => {
             placeholder="Birthday"
             name="dateOfBirth"
             required
+            inputFormat="DD/MM/YYYY"
             value={userDetailsForm?.dateOfBirth?.value}
             onChange={(newValue) => {
-              let value = newValue.toISOString();
+              let value = newValue.format("DD-MM-YYYY");
               console.log(value);
               setUserDetailsForm({
                 ...userDetailsForm,
@@ -254,12 +255,18 @@ const UserFormView = () => {
                 },
               });
             }}
-            error={userDetailsForm?.dateOfBirth?.error}
-            helperText={
-              userDetailsForm?.dateOfBirth?.error &&
-              userDetailsForm?.dateOfBirth?.errorMsg
-            }
-            renderInput={(params) => <TextField fullWidth {...params} />}
+            renderInput={(params) => (
+              <TextField
+                fullWidth
+                {...params}
+                required
+                error={userDetailsForm?.dateOfBirth?.error}
+                helperText={
+                  userDetailsForm?.dateOfBirth?.error &&
+                  userDetailsForm?.dateOfBirth?.errorMsg
+                }
+              />
+            )}
           />
         </Box>
       </Box>
