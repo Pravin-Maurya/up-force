@@ -1,10 +1,13 @@
-import logo from "./logo.svg";
+import HorizontalStepper from "./component/stepper";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
+import FormContainer from "./component/formContainer";
 function App() {
   return (
-    <>
-      <h1>Pravin welcome to React</h1>
-    </>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <FormContainer />
+    </LocalizationProvider>
   );
 }
 

@@ -1,0 +1,17 @@
+.container {
+  margin: 20px;
+}
+.title {
+  color: green;
+}
+.dataContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.keyName {
+  width: 50%;
+  padding-left: 10px;
+}
+.keyValue {
+  width: 50%;
+}
