@@ -1,4 +1,3 @@
-import HorizontalStepper from "./component/stepper";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 

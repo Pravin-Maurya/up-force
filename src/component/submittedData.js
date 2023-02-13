@@ -1,4 +1,4 @@
-import { List, ListItem, Typography, Divider } from "@mui/material";
+import { Typography, Divider } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import "./submittedData.css";

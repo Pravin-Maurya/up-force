@@ -87,7 +87,7 @@ const AddressFormView = () => {
   };
 
   return (
-    <form className="container">
+    <Box className="container">
       <Box component="form" noValidate className="inner-container">
         <Box className="input-form">
           <TextField
@@ -220,7 +220,7 @@ const AddressFormView = () => {
           Next
         </Button>
       </div>
-    </form>
+    </Box>
   );
 };
 export default AddressFormView;
