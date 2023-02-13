@@ -245,7 +245,7 @@ const UserFormView = () => {
             inputFormat="DD/MM/YYYY"
             value={userDetailsForm?.dateOfBirth?.value}
             onChange={(newValue) => {
-              let value = newValue.format("DD-MM-YYYY");
+              let value = newValue;
               console.log(value);
               setUserDetailsForm({
                 ...userDetailsForm,
